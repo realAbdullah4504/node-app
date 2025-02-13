@@ -1,0 +1,15 @@
+{
+  "_id": "66042252f6224aade6da9654",
+  "CountryCode": "ES",
+  "Postal_Code": 33844,
+  "Place_Name": "Aguerina",
+  "Admin_Name": "Asturias",
+  "Admin_Code": "AS",
+  "Admin_Name2": "Asturias",
+  "Admin_Code2": "O",
+  "Admin_Name3": "Belmonte de Miranda",
+  "Admin_Code3": 33005,
+  "Latitude": 43.2217,
+  "Longitude": -6.2505,
+  "Accuracy": 4
+}

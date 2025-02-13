@@ -1,0 +1,466 @@
+{
+  "users": [
+    {
+      "_id": "6634cadc3165d02033880194",
+      "name": "rwerwerwer",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "6604228df6224aade6daaa5f",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Berganzo",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.6499,
+        "Longitude": -2.7818,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "6634cadd3165d02033880196",
+        "user": "6634cadc3165d02033880194",
+        "services": ["Assembly service"],
+        "company_name": "rewrewrw",
+        "documents": [
+          {
+            "document_type": "trade_licence",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1714735833/i8zyedazwytijmsupyau.webp",
+            "_id": "6634cadd3165d02033880197"
+          }
+        ],
+        "images": [
+          "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1714743084/av913wvmen4glhfnybgz.webp"
+        ],
+        "description": "",
+        "reviews": ["6634d1b6079be3e02fa8b14c"],
+        "status": "verified",
+        "createdAt": "2024-05-03T11:30:37.015Z",
+        "updatedAt": "2024-05-03T14:52:36.520Z",
+        "__v": 0,
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": 1
+    },
+    {
+      "_id": "6683c5b337d00fd56aead670",
+      "name": "wqewqeewqeqw",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "6683c5b337d00fd56aead672",
+        "user": "6683c5b337d00fd56aead670",
+        "services": ["Assembly service"],
+        "company_name": "eqeqweqwe",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1719911855/jszpinaxglxmkqjosknv.jpg",
+            "_id": "6683c5b337d00fd56aead673"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-07-02T09:17:39.662Z",
+        "updatedAt": "2024-07-02T09:23:50.146Z",
+        "__v": 0,
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "663f1218aeed954769b30395",
+      "name": "ewrwerewre",
+      "profile_photo": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1716319588/xbnhxzvcgvys8hsrlzja.jpg",
+      "address": {
+        "_id": "660422ddf6224aade6dad41d",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Loza",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.6433,
+        "Longitude": -2.6831,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "663f1218aeed954769b30397",
+        "user": "663f1218aeed954769b30395",
+        "services": ["Assembly service"],
+        "company_name": "ewrwerwer",
+        "documents": [
+          {
+            "document_type": "trade_licence",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1715409431/hnhw3vmm8j1ofyzotyoe.jpg",
+            "_id": "663f1218aeed954769b30398"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-11T06:37:12.947Z",
+        "updatedAt": "2024-05-22T16:36:31.726Z",
+        "__v": 0,
+        "message": "",
+        "current_subscription": "664cf6c583e235fd4e38b705",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "6683c63d281bcece0034cf24",
+      "name": "rweerewrwe",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "6683c63d281bcece0034cf26",
+        "user": "6683c63d281bcece0034cf24",
+        "services": ["Assembly service"],
+        "company_name": "terterteretert",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1719911984/rpwsckyeozfcmsrfp79b.jpg",
+            "_id": "6683c63d281bcece0034cf27"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-07-02T09:19:57.178Z",
+        "updatedAt": "2024-07-02T09:23:44.173Z",
+        "__v": 0,
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "6656cedf50fd1267c7077e1f",
+      "name": "wqeqwewq",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "6656cedf50fd1267c7077e21",
+        "user": "6656cedf50fd1267c7077e1f",
+        "services": ["Assembly service"],
+        "company_name": "weqweqw",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1716965084/ne187whciey97ckezfve.png",
+            "_id": "6656cedf50fd1267c7077e22"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-29T06:44:47.338Z",
+        "updatedAt": "2024-06-01T14:38:07.434Z",
+        "__v": 0,
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "66595dd0a64b2d88d8ae8c70",
+      "name": "wqeqweqe",
+      "profile_photo": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1717189973/ej4ednxk7h3le8qknmeg.png",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "66595dd0a64b2d88d8ae8c72",
+        "user": "66595dd0a64b2d88d8ae8c70",
+        "services": ["Assembly service"],
+        "company_name": "ereewrewe",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1717132685/hhcwosovbjnsgzvhsgok.png",
+            "_id": "66595dd0a64b2d88d8ae8c73"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-31T05:19:12.161Z",
+        "updatedAt": "2024-05-31T05:38:25.734Z",
+        "__v": 0,
+        "message": "",
+        "current_subscription": "66595fe38fcfcaf774128f2c",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "664f8ffd7bf89d706c2a47a7",
+      "name": "weqeqwewq",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "664f8ffd7bf89d706c2a47a9",
+        "user": "664f8ffd7bf89d706c2a47a7",
+        "services": ["Assembly service"],
+        "company_name": "wqeqwewq",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1716490202/sn1snegxnospdhuxcdc4.jpg",
+            "_id": "664f8ffd7bf89d706c2a47aa"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-23T18:50:37.640Z",
+        "updatedAt": "2024-06-01T14:38:17.330Z",
+        "__v": 0,
+        "current_subscription": "664f903b2ac5004ce811da6b",
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "665606143d69e40326475e73",
+      "name": "eqweqe",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "665606143d69e40326475e75",
+        "user": "665606143d69e40326475e73",
+        "services": ["Assembly service"],
+        "company_name": "weqweqwe",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1716913681/z2jpnf19okoq9lr2e4wl.png",
+            "_id": "665606143d69e40326475e76"
+          }
+        ],
+        "images": [
+          "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1720273239/w7bqz2torkh0x2eu9loq.jpg"
+        ],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-28T16:28:04.040Z",
+        "updatedAt": "2024-07-06T13:40:38.137Z",
+        "__v": 0,
+        "current_subscription": "6656063221ff4a634a201c19",
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "664ecd7b0791c67c80f8b6ca",
+      "name": "werwerwe",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "6604238ef6224aade6db259c",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Ocio",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.6567,
+        "Longitude": -2.8226,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "664ecd7b0791c67c80f8b6cc",
+        "user": "664ecd7b0791c67c80f8b6ca",
+        "services": ["Assembly service"],
+        "company_name": "rewrwerewr",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1716440441/wtjlrx3jxvvoo0ei6dr1.jpg",
+            "_id": "664ecd7b0791c67c80f8b6cd"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-23T05:00:43.254Z",
+        "updatedAt": "2024-05-23T06:47:50.371Z",
+        "__v": 0,
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    },
+    {
+      "_id": "665221c4d75110ff0aba6f7d",
+      "name": "weqweqwe",
+      "profile_photo": "https://t3.ftcdn.net/jpg/05/53/79/60/240_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg",
+      "address": {
+        "_id": "66042273f6224aade6da9f24",
+        "CountryCode": "ES",
+        "Postal_Code": 1212,
+        "Place_Name": "Montoria",
+        "Admin_Name": "Pais Vasco",
+        "Admin_Code": "PV",
+        "Admin_Name2": "�lava",
+        "Admin_Code2": "VI",
+        "Admin_Name3": "Bastida / Labastida",
+        "Admin_Code3": 1028,
+        "Latitude": 42.623,
+        "Longitude": -2.7102,
+        "Accuracy": 4
+      },
+      "admin_name": "Pais Vasco",
+      "role": "handyman",
+      "craftsman": {
+        "_id": "665221c4d75110ff0aba6f7f",
+        "user": "665221c4d75110ff0aba6f7d",
+        "services": ["Assembly service"],
+        "company_name": "wqeqweqwe",
+        "documents": [
+          {
+            "document_type": "craft_card",
+            "document_link": "https://res.cloudinary.com/dv9vv9ju7/image/upload/v1716658625/gm4ufbjsjgicnt8idvq7.jpg",
+            "_id": "665221c4d75110ff0aba6f80"
+          }
+        ],
+        "images": [],
+        "description": "",
+        "reviews": [],
+        "status": "verified",
+        "createdAt": "2024-05-25T17:37:08.911Z",
+        "updatedAt": "2024-06-01T14:38:15.307Z",
+        "__v": 0,
+        "current_subscription": "665221dec2017f242615f86b",
+        "message": "",
+        "statusOrder": 0
+      },
+      "avgRating": null
+    }
+  ],
+  "totalCount": 11,
+  "totalPages": 2,
+  "currentPage": 1
+}
