@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "socketServer":"nodemon socketServer.js",
-    "mongodbInsert": "node mongodbInsert"
+    "mongodbInsert": "node mongodbhandyman/mongodbInsert"
   },
   "author": "",
   "license": "ISC",

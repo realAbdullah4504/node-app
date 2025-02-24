@@ -41,7 +41,7 @@ const PostalCodeSchema = new mongoose.Schema(
 
 const PostalCode = mongoose.model("PostalCode", PostalCodeSchema);
 
-// const dataArray = require("./output.json");
+// const dataArray = require("./developement.postalcodes.json");
 // console.log(dataArray.length);
 
 
@@ -185,8 +185,8 @@ const correctCityNames = async () => {
 // correctCityNames();
 
 
-const postalCodes = require("./Spainpostalcode_Spain_Postal_Code.json")
-console.log(postalCodes.length)
+// const postalCodes = require("./Spainpostalcode_Spain_Postal_Code.json")
+// console.log(postalCodes.length)
 
 const correctPostalDistanceAndlocationName = () => {
     const correct = postalCodes.map(postalCode => {
@@ -202,4 +202,4 @@ const correctPostalDistanceAndlocationName = () => {
     console.log("file is written")
 }
 
-correctPostalDistanceAndlocationName();
+// correctPostalDistanceAndlocationName();
