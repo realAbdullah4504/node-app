@@ -1,31 +1,32 @@
 const express = require('express');
+const cookieParser = require('cookie-parser');
+const csrf = require('csurf');
 const path = require('path');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
+const port = 3000;
 
-// Proxy FULL frontend page from backend
-app.use('/proxied-page', createProxyMiddleware({
-  target: 'http://localhost',
-  changeOrigin: true,
-  pathRewrite: { '^/proxied-page': '/' },
-}));
+// Setup middleware
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.use('/api/hello', createProxyMiddleware({
-  target: 'http://localhost',
-  changeOrigin: true,
-  pathRewrite: { '^/api/hello': '/api/hello' },
-}));
-
-
-// Optionally also render your own EJS frontend
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
+// Serve static HTML
 app.get('/', (req, res) => {
-  res.render('index');
+  res.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
-app.listen(3000, () => {
-  console.log('🚀 Proxy Server running on http://localhost:3000');
+// Provide CSRF token
+app.get('/api/csrf-token', (req, res) => {
+  res.json({ csrfToken: req.csrfToken() });
+});
+
+// Protected route
+app.post('/api/submit', (req, res) => {
+  // If token is invalid, it throws automatically
+  res.json({ message: '✅ CSRF-protected POST received successfully!', data: req.body });
+});
+
+app.listen(port, () => {
+  console.log(`🚀 Server running at http://localhost:${port}`);
 });

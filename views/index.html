@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SameSite Cookie Demo</title>
+</head>
+<body>
+    <h1>SameSite Cookie Test</h1>
+    <button onclick="setCookie()">Set Cookie (SameSite=Strict)</button>
+    <button onclick="accessSecureEndpoint()">Access Secure Endpoint</button>
+
+    <script>
+        // Function to set the cookie by making a request to /set-cookie
+        function setCookie() {
+            fetch('https://dc03-3-108-119-62.ngrok-free.app/set-cookie', {
+                method: 'GET',
+                credentials: 'include'  // Ensures cookies are sent with requests
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data);
+                alert(data);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Function to try to access the secure endpoint
+        function accessSecureEndpoint() {
+            fetch('https://dc03-3-108-119-62.ngrok-free.app/secure-endpoint', {
+                method: 'GET',
+                credentials: 'include'  // Ensures cookies are sent with requests
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    alert('You have access to the secure endpoint!');
+                    console.log('Response:', response);
+                } else {
+                    alert('Unauthorized: No session cookie');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
