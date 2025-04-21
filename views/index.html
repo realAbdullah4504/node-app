@@ -13,7 +13,7 @@
     <script>
         // Function to set the cookie by making a request to /set-cookie
         function setCookie() {
-            fetch('https://cf77-3-108-119-62.ngrok-free.app/set-cookie', {
+            fetch('https://api1.abdullah-javed.com/set-cookie', {
                 method: 'GET',
                 credentials: 'include'  // Ensures cookies are sent with requests
             })
@@ -27,7 +27,7 @@
 
         // Function to try to access the secure endpoint
         function accessSecureEndpoint() {
-            fetch('https://cf77-3-108-119-62.ngrok-free.app/secure-endpoint', {
+            fetch('https://api2.abdullah-javed.com/secure-endpoint', {
                 method: 'GET',
                 credentials: 'include'  // Ensures cookies are sent with requests
             })
