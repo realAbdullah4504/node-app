@@ -4,7 +4,7 @@ const csrf = require('csurf');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Setup middleware
 app.use(cookieParser());
