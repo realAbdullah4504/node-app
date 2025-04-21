@@ -16,17 +16,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
-// Provide CSRF token
-app.get('/api/csrf-token', (req, res) => {
-  res.json({ csrfToken: req.csrfToken() });
-});
-
-// Protected route
-app.post('/api/submit', (req, res) => {
-  // If token is invalid, it throws automatically
-  res.json({ message: '✅ CSRF-protected POST received successfully!', data: req.body });
-});
-
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);
 });

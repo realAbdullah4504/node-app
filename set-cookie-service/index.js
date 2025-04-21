@@ -9,10 +9,9 @@ app.get('/set-cookie', (req, res) => {
     httpOnly: true,
     secure: true,
     sameSite: 'None',
+    domain: '.abdullah-javed.com', // notice the dot!
+    path: '/'
   });
-  res.setHeader('Set-Cookie', [
-    `sessionId=securetoken123; Path=/; Domain=abdullah-javed.com; HttpOnly; Secure; SameSite=None`
-  ]);  
   console.log('headers: ', req.headers);
   res.send('Cookie Set!');
 });
