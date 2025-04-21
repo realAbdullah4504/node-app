@@ -2,7 +2,12 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({
+  origin: "https://abdullah-javed.com",   // ❗ Must match the frontend domain
+  credentials: true,                      // ❗ Allow cookies
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
 app.get('/set-cookie', (req, res) => {
   res.cookie('sessionId', 'securetoken123', {
