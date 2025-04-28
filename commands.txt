@@ -1,0 +1,6 @@
+redis-server
+curl -X POST http://localhost:3000/cache -H "Content-Type: application/json" -d '{"key":"user:1","value":{"name":"John","age":30}}'
+
+curl http://localhost:3000/cache/user:1
+
+curl -X DELETE http://localhost:3000/cache/user:1
