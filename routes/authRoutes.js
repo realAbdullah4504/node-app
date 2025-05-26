@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
+const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
+const sendMail = require("../helpers/email");
 
 const JWT_SECRET = "this_is_my_secret_key";
 
@@ -9,6 +11,8 @@ let user = {
   id: 1,
   username: "admin",
   password: bcrypt.hashSync("password", 8), // hashed password
+  emailToken: crypto.randomBytes(32).toString("hex"),
+  isVerified: false,
 };
 
 router.get("/", (req, res) => {
@@ -25,6 +29,9 @@ router.post("/login", (req, res) => {
   const isPasswordValid = bcrypt.compareSync(password, user.password);
   if (!isPasswordValid) {
     return res.status(401).json({ message: "Invalid username or password" });
+  }
+  if (!user.isVerified) {
+    return res.status(401).json({ message: "Email not verified" });
   }
   const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: "1h" });
   const refreshToken = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: "1d" });
@@ -45,19 +52,34 @@ router.get("/protected", (req, res) => {
   });
 });
 
-router.post("/register", (req, res) => {
+router.post("/register", async (req, res) => {
   const { username, password } = req.body;
-  if (!username || !password) {
+  const email = 'abdullahjaved4504@gmail.com';
+  if (!username || !password || !email) {
     return res
       .status(400)
       .json({ message: "Username and password are required" });
   }
   const hashedPassword = bcrypt.hashSync(password, 8);
-  const newUser = { id: Date.now(), username, password: hashedPassword };
+  const emailToken = crypto.randomBytes(32).toString("hex");
+  const verificationLink = `http://localhost:3000/verify-email?token=${emailToken}`;
+  await sendMail(email, "Verify your email", verificationLink);
+  const newUser = { id: Date.now(), username, password: hashedPassword, emailToken, isVerified: false };
   user = newUser;
   res.json(newUser);
 });
 
+router.get("/verify-email", async (req, res) => {
+  const { token } = req.query;
+  if (!token) {
+    return res.status(400).json({ message: "Token is required" });
+  }
+  if (token !== user.emailToken) {
+    return res.status(400).json({ message: "Invalid token" });
+  }
+  user.isVerified = true;
+  res.json({ message: "Email verified successfully" });
+});
 
 router.post("/refresh-token", (req, res) => {
   const refreshToken = req.body.refreshToken;
@@ -73,4 +95,6 @@ router.post("/refresh-token", (req, res) => {
     res.json({ token });
   });
 });
+
+
 module.exports = router;
