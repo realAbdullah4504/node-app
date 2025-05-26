@@ -1,9 +1,0 @@
-version: 2
-
-tunnels:
-  set-cookie-service:
-    addr: 4001
-    proto: http
-  secure-endpoint-service:
-    addr: 4002
-    proto: http
