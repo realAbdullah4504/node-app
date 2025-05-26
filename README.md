@@ -1,2 +1,2 @@
 npm i -g nodemon
-npm install express jsonwebtoken bcryptjs cors
+npm install express jsonwebtoken bcryptjs cors mongoose dotenv
