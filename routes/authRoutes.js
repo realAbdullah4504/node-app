@@ -1,5 +1,5 @@
 const express = require('express');
-const router=express.Router();
+const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -46,4 +46,4 @@ router.get('/protected', (req, res) => {
     });
 });
 
-module.exports=router;
+module.exports = router;

@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     const note = new Note({
         title: req.body.title,
-        content: req.body.content
+        description: req.body.description
     });
     await note.save();
     res.status(201).json(note);
