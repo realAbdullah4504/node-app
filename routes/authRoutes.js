@@ -12,7 +12,7 @@ let user = {
   username: "admin",
   password: bcrypt.hashSync("password", 8), // hashed password
   emailToken: crypto.randomBytes(32).toString("hex"),
-  isVerified: false,
+  isVerified: true,
 };
 
 router.get("/", (req, res) => {
