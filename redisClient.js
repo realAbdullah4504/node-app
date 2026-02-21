@@ -1,4 +1,4 @@
-const Redis = require("ioredis");
+import Redis from "ioredis";
 
 const redis = new Redis({
   host: "redis-18619.c283.us-east-1-4.ec2.cloud.redislabs.com",
@@ -14,4 +14,4 @@ redis.on("error", (err) => {
   console.error("❌ Redis error:", err);
 });
 
-module.exports = redis;
+export default redis;

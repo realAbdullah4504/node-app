@@ -1,5 +1,5 @@
-const express = require("express");
-const redis = require("./redisClient");
+import express from "express";
+import redis from "./redisClient.js";
 
 const app = express();
 app.use(express.json());
