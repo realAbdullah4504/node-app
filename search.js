@@ -1,4 +1,4 @@
-const API_KEY = "V1XPx1eHtK5LUHAdaZf7ARpJ";
+const API_KEY = process.env.SEARCHAPI_KEY;
 
 // exa you.com searchapi
 
