@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // { "Admin_Name3": { $regex: "�" } }
 const connectDB = async () => {
     try {
-        const uri = 'mongodb+srv://Javed:QfgtEOcLSYGtQgLT@cluster0.c7tvp.mongodb.net/developement'
+        const uri = 'mongodb+srv://abdullahjaved4504:kVuuxpFFieEbuxA5@cluster0.eyd6ho3.mongodb.net/developement'
         // const uri = 'mongodb://localhost:27017/developement';
         await mongoose.connect(uri, {
             serverSelectionTimeoutMS: 50000, // Increase the timeout to 50 seconds
@@ -41,14 +41,21 @@ const PostalCodeSchema = new mongoose.Schema(
 
 const PostalCode = mongoose.model("PostalCode", PostalCodeSchema);
 
-// const dataArray = require("./developement.postalcodes.json");
+const dataArray = require("./developement.postalcodes.json");
 // console.log(dataArray.length);
 
 
 const insertPostalCodes = async () => {
     try {
         await connectDB();
-        const result = await PostalCode.insertMany(dataArray.slice(0, 1000));
+        // Transform the data: convert Extended JSON _id ({ "$oid": "..." }) to plain string
+        const transformedData = dataArray.slice(0, 1000).map(doc => {
+            if (doc._id && doc._id.$oid) {
+                return { ...doc, _id: doc._id.$oid };
+            }
+            return doc;
+        });
+        const result = await PostalCode.insertMany(transformedData);
         console.log("Results have been inserted");
     } catch (error) {
         console.error('Error inserting postal codes:', error);
