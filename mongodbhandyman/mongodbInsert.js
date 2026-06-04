@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { Schema, model, models } = require('mongoose');
 
 
 // { "Admin_Name3": { $regex: "�" } }
@@ -15,6 +16,59 @@ const connectDB = async () => {
     }
 };
 connectDB();
+
+
+// Define the interface for Plan
+// Define the schema for Plan
+const planSchema = new Schema({
+    name: { type: String, required: true },
+    price: { type: Number, required: true },
+    duration_in_months: { type: Number, required: true, min: 1, max: 12 },
+    description: { type: String, required: true },
+});
+
+// Define and export the Plan model
+const Plans = models.Plans ?? model("Plans", planSchema);
+
+const insertPlans = async () => {
+    try {
+        await connectDB();
+        const plans = [
+            {
+                name: "Basic",
+                price: 9.99,
+                duration_in_months: 1,
+                description: "Basic plan with essential features",
+            },
+            {
+                name: "Standard",
+                price: 19.99,
+                duration_in_months: 3,
+                description: "Standard plan with more features",
+            },
+            {
+                name: "Premium",
+                price: 29.99,
+                duration_in_months: 6,
+                description: "Premium plan with all features",
+            },
+            {
+                name: "Enterprise",
+                price: 49.99,
+                duration_in_months: 12,
+                description: "Enterprise plan with priority support",
+            },
+        ];
+        await Plans.insertMany(plans);
+        console.log("Plans inserted successfully");
+    } catch (error) {
+        console.error("Error inserting plans:", error);
+    } finally {
+        mongoose.connection.close();
+    }
+};
+
+// insertPlans();
 
 
 const PostalCodeSchema = new mongoose.Schema(
@@ -49,7 +103,7 @@ const insertPostalCodes = async () => {
     try {
         await connectDB();
         // Transform the data: convert Extended JSON _id ({ "$oid": "..." }) to plain string
-        const transformedData = dataArray.slice(0, 1000).map(doc => {
+        const transformedData = dataArray.map(doc => {
             if (doc._id && doc._id.$oid) {
                 return { ...doc, _id: doc._id.$oid };
             }
